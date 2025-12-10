@@ -1,0 +1,113 @@
+.auth-container_bg{
+    background:linear-gradient(to right,#FEAF00,#F8D442)
+}
+input::placeholder {
+  color: #E5E5E5 !important;
+  font-size: small;
+  opacity: 3;
+}
+.text-gray-color{
+    color: #6C6C6C;
+}
+.lable-color{
+    color: #686464 !important;
+}
+.btn-color{
+   background-color: #FEAF00 !important;
+}
+
+.app-layout {
+  display: flex;
+  align-items: stretch;
+  min-height: 100vh;   
+  background-color: #FEAF00;
+}
+.bg-master{
+  background-color:#f8f8f8!important; 
+  
+
+}
+.div-bg{
+  background-color: #ededed;
+  height: 1px;
+  width: 90%;
+  margin: auto;
+}
+
+/* السايدبار */
+.sidebar-container {
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   
+ 
+  /* متحطش vh هنا */
+}
+
+/* عشان react-pro-sidebar ياخد طول الأب كله */
+.sidebar-container .ps-sidebar-root,
+.sidebar-container .ps-sidebar-container {
+   background-color: #f2eae1 !important; 
+  height: 100%;
+   width: 100%;
+  transition: width 0.3s ease; 
+}
+.sidebar-container .ps-menu-button{
+    transition: all 1s;
+}
+.sidebar-container .ps-menu-button:hover{
+  
+    background-color: #FEAF00 !important;
+    border-radius: 7px;
+    width: 100%;
+
+}
+.sidebar-item {
+    width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 10px;
+  cursor: pointer;
+}
+.sidebar-wrapper {
+  
+  height: 100vh;
+  overflow: hidden;
+  transition: all 2s ease;  
+}
+.toggle-icon {
+ 
+  cursor: pointer;
+  transition: transform 2s ease !important;  
+ visibility: visible;
+}
+
+.toggle-icon.open {
+ 
+  visibility: hidden;
+  transform: rotate(90deg) !important;
+}
+.profile-card {
+  position: relative;
+  padding-top: 60px; /* مساحة للصورة من فوق */
+  border-radius: 16px;
+  overflow: visible; /* عشان الصورة تطلع برا الكارت */
+}
+
+.profile-avatar-wrapper {
+  position: absolute;
+  top: -90px;              /* الصورة طالعة لفوق شويه */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;      /* دايرة */
+  object-fit: cover;
+  border: 3px solid #fff;  /* بوردر أبيض شكله حلو */
+}
+
