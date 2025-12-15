@@ -13,14 +13,14 @@ export default function MasterLayout() {
 
   return (
     <div className="container-fluid bg-master">
-      <div className="row ">
+      <div className="row  g-0">
         {isSidebarOpen && (
-          <div className={` col-md-2 col-lg-2 p-0 sidebar-wrapper ${isSidebarOpen ? "open" : "closed"}`}>
+          <div className={`sidebar-wrapper ${isSidebarOpen ? "open col-12 col-md-3 col-lg-2" : "closed"}`}>
             <SideBar onToggle={toggleSidebar} isSidebarOpen={isSidebarOpen}   />
           </div>
         )}
 
-        <div className={ isSidebarOpen ? "col-md-10 col-lg-10  p-0" : "col-12  p-0" }>
+        <div className={`${isSidebarOpen ? "col-12 col-md-9 col-lg-10" : "col-12"} p-0`}>
           <NavBar isSidebarOpen={isSidebarOpen} onToggleSidebar={toggleSidebar}  />
           <Outlet  />
         </div>

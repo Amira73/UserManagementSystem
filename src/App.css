@@ -77,6 +77,13 @@ input::placeholder {
   overflow: hidden;
   transition: all 2s ease;  
 }
+@media (max-width: 768px) {
+  .sidebar-wrapper {
+    position: absolute;
+    z-index: 999;
+    width: 70%; /* تقدري تغيّري */
+  }
+}
 .toggle-icon {
  
   cursor: pointer;
